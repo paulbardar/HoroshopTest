@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GadgetShop | Order</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="ba-header ba-container"></header>
+	<main role="main" class="ba-container">
+		<h1 class="ba-title">Оформление заказа</h1>
+		<div class="ba-order-block">
+			<section class="ba-buyer-block">
+				<div class="ba-tabs">
+					<ul class="ba-tabs-control">
+						<li class="ba-tabs-control__item active">
+							<a href="#" class="ba-tabs-control__link">Я новый покупатель</a>
+						</li>
+						<li class="ba-tabs-control__item">
+							<a href="#" class="ba-tabs-control__link">Я зарегистрированный покупатель</a>
+						</li>
+					</ul>
+					<ul class="ba-tabs-list">
+						<li class="ba-tabs-item active">
+							<h6 class="ba-tabs-item__header">Получатель заказа</h6>
+							<div class="ba-order-fields">
+								<form class="ba-order-form" action="#" method="get">
+									<div class="ba-addressee">
+										<div class="ba-input">
+											<label for="username">Имя и фамилия</label>
+											<input type="text" name="username" id="username">
+										</div>
+										<div class="ba-input">
+											<label for="tel">Телефон</label>
+											<input type="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}">
+										</div>
+
+										<div class="ba-input">
+											<label for="city">Город</label>
+											<input type="text" name="city" id="city" placeholder="Киев">
+										</div>
+
+										<div class="ba-input">
+											<label for="email">Эл. почта</label>
+											<input type="email" name="email" id="email" placeholder="user@mail.com">
+										</div>
+
+										<div class="ba-comment">
+											<p class="ba-comment__accordion">Добавить комментарий к заказу</p>
+											<textarea class="ba-comment__field"></textarea>
+										</div>
+
+									</div>
+									<div class="ba-dilevery">
+
+										<div class="ba-select">
+											<label for="delivery">Доставка</label>
+
+											<select name="delivery" class="ba-delivery-select">
+												<option value="np25">&#171;Новая почта&#187; 25 грн</option>
+												<option value="np35">&#171;Новая почта&#187; 35 грн</option>
+												<option value="np45">&#171;Новая почта&#187; 45 грн</option>
+											</select>
+
+										</div>
+
+										<div class="ba-select ba-address">
+											<label for="address-delivery">Адрес склада</label>
+
+											<select name="address-delivery" class="ba-address__select">
+												<option value="np25" >Львов, Отделение №8, ул. Гетьмана И. Мазепы, 37</option>
+												<option value="np35">Львов, Отделение №7, ул. И. Франка, 47</option>
+												<option value="np45" selected>Львов, Отделение №9, ул. Линкольна, 57</option>
+											</select>
+
+										</div>
+									</div>
+									<div class="ba-payment">
+										<div class="ba-select ">
+											<label for="payment">Оплата</label>
+											<select name="paymant" class="ba-payment__select">
+												<option value="np25">Наложенный платёж</option>
+												<option value="np35">При получении</option>
+												<option value="np45">Безналичный платёж</option>
+											</select>
+										</div>
+
+									</div>
+									<button class="ba-button ba-button__order" name="submit">
+										Оформить заказ
+									</button>
+
+								</form>
+							</div>
+						</li>
+						<li class="ba-tabs-item">
+							<h6 class="ba-tabs-item__header">Получатель заказа</h6>
+							<div class="ba-order-fields">
+								<form class="ba-order-form" action="#" method="get">
+									<div class="ba-addressee">
+										<div class="ba-input ba-input__registered">
+											<label for="username1">Имя и фамилия</label>
+											<input type="text" name="username" id="username1" placeholder="Иваненко Мартин Бориславович">
+										</div>
+										<div class="ba-input">
+											<label for="tel">Телефон</label>
+											<input type="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}" placeholder="8-222-333">
+										</div>
+
+										<div class="ba-input">
+											<label for="city1">Город</label>
+											<input type="text" name="city" id="city1" placeholder="Киев">
+										</div>
+
+										<div class="ba-input">
+											<label for="email1">Эл. почта</label>
+											<input type="email" name="email" id="email1" placeholder="iMartyn@gmail.com">
+										</div>
+
+										<div class="ba-comment">
+											<p class="ba-comment__accordion">Добавить комментарий к заказу</p>
+											<textarea class="ba-comment__field"></textarea>
+										</div>
+
+									</div>
+									<div class="ba-dilevery">
+
+										<div class="ba-select">
+											<label for="delivery">Доставка</label>
+
+											<select name="delivery" class="ba-delivery-select">
+												<option value="np25">&#171;Новая почта&#187; 25 грн</option>
+												<option value="np35">&#171;Новая почта&#187; 35 грн</option>
+												<option value="np45">&#171;Новая почта&#187; 45 грн</option>
+											</select>
+
+										</div>
+
+										<div class="ba-select ba-address">
+											<label for="address-delivery">Адрес склада</label>
+
+											<select name="address-delivery" class="ba-address__select">
+												<option value="np25" > Одесса, Отделение №8, ул. Гетьмана И. Мазепы, 37</option>
+												<option value="np35">Киев, Отделение №7, ул. И. Франка, 47</option>
+												<option value="np45" selected>Харьков, Отделение №9, ул. Линкольна, 57</option>
+											</select>
+
+										</div>
+									</div>
+									<div class="ba-payment">
+										<div class="ba-select ">
+											<label for="payment">Оплата</label>
+											<select name="paymant" class="ba-payment__select">
+												<option value="np25">Наложенный платёж</option>
+												<option value="np35">При получении</option>
+												<option value="np45">Безналичный платёж</option>
+											</select>
+										</div>
+
+									</div>
+									<button class="ba-button ba-button__order" name="submit">
+										Оформить заказ
+									</button>
+
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</section>
+			<aside class="ba-buyer-order">
+				<h6 class="ba-order-title">
+					Ваш заказ
+				</h6>
+				<div class="ba-purchase">
+					<div class="ba-purchase__item">
+						<div class="ba-purchase__img">
+							<a href="#">
+								<img src="img/purchase1.png" alt="Img">
+							</a>
+						</div>
+						<div class="ba-purchase__info">
+							<a href="#" class="ba-purchase__name">Цифровий фотоапарат Nikon D5100 kit (18-55 VR)</a>
+							<div class="ba-purchase__cost">
+								<p class="ba-purchase__amount">6 568 грн. × 1 шт.</p>
+								<p class="ba-purchase__cost-item">6 568 грн.</p>
+							</div>
+						</div>
+					</div>
+					<div class="ba-purchase__item">
+						<div class="ba-purchase__img">
+							<a href="#">
+								<img src="img/purchase2.png" alt="Img">
+							</a>
+						</div>
+						<div class="ba-purchase__info">
+							<a href="#" class="ba-purchase__name">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</a>
+							<div class="ba-purchase__cost">
+								<p class="ba-purchase__amount">3 689 грн. × 1 шт.</p>
+								<p class="ba-purchase__cost-item">3 689 грн.</p>
+							</div>
+						</div>
+					</div>
+					<p class="ba-purchase__total-cost">9 769,15 грн.</p>
+				</div>
+			</aside>
+
+		</div>
+	</main>
+	<footer class="ba-footer">
+
+	</footer>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
