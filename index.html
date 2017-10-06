@@ -43,7 +43,7 @@
 										</div>
 										<div class="ba-input">
 											<label for="tel">Телефон</label>
-											<input type="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}">
+											<input type="tel" id="tel" name="tel" pattern="8-[0-9]{3}-[0-9]{3}">
 										</div>
 
 										<div class="ba-input">
@@ -67,7 +67,7 @@
 										<div class="ba-select">
 											<label for="delivery">Доставка</label>
 
-											<select name="delivery" class="ba-delivery-select">
+											<select name="delivery" id="delivery" class="ba-delivery-select">
 												<option value="np25">&#171;Новая почта&#187; 25 грн</option>
 												<option value="np35">&#171;Новая почта&#187; 35 грн</option>
 												<option value="np45">&#171;Новая почта&#187; 45 грн</option>
@@ -78,7 +78,7 @@
 										<div class="ba-select ba-address">
 											<label for="address-delivery">Адрес склада</label>
 
-											<select name="address-delivery" class="ba-address__select">
+											<select name="address-delivery" class="ba-address__select" id="address-delivery">
 												<option value="np25" >Львов, Отделение №8, ул. Гетьмана И. Мазепы, 37</option>
 												<option value="np35">Львов, Отделение №7, ул. И. Франка, 47</option>
 												<option value="np45" selected>Львов, Отделение №9, ул. Линкольна, 57</option>
@@ -89,7 +89,7 @@
 									<div class="ba-payment">
 										<div class="ba-select ">
 											<label for="payment">Оплата</label>
-											<select name="paymant" class="ba-payment__select">
+											<select name="paymant" class="ba-payment__select" id="payment">
 												<option value="np25">Наложенный платёж</option>
 												<option value="np35">При получении</option>
 												<option value="np45">Безналичный платёж</option>
@@ -148,9 +148,9 @@
 										</div>
 
 										<div class="ba-select ba-address">
-											<label for="address-delivery">Адрес склада</label>
+											<label for="address-delivery1">Адрес склада</label>
 
-											<select name="address-delivery" class="ba-address__select">
+											<select name="address-delivery" class="ba-address__select" id="address-delivery1">
 												<option value="np25" > Одесса, Отделение №8, ул. Гетьмана И. Мазепы, 37</option>
 												<option value="np35">Киев, Отделение №7, ул. И. Франка, 47</option>
 												<option value="np45" selected>Харьков, Отделение №9, ул. Линкольна, 57</option>
@@ -160,8 +160,8 @@
 									</div>
 									<div class="ba-payment">
 										<div class="ba-select ">
-											<label for="payment">Оплата</label>
-											<select name="paymant" class="ba-payment__select">
+											<label for="payment1">Оплата</label>
+											<select name="paymant" class="ba-payment__select" id="payment1">
 												<option value="np25">Наложенный платёж</option>
 												<option value="np35">При получении</option>
 												<option value="np45">Безналичный платёж</option>
