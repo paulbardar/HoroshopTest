@@ -1201,7 +1201,7 @@ h6.ba-order-title {
           justify-content: space-between;
 }
 .ba-purchase__total-cost {
-  text-align: center;
+  text-align: right;
   font-weight: bold;
   padding-right: 10px;
 }
